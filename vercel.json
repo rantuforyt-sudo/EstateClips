@@ -1,0 +1,17 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "functions": {
+    "src/app/api/upload/route.ts": {
+      "maxDuration": 300
+    },
+    "src/app/api/process/route.ts": {
+      "maxDuration": 300
+    },
+    "src/app/api/projects/[id]/route.ts": {
+      "maxDuration": 60
+    }
+  }
+}
